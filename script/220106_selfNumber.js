@@ -16,5 +16,7 @@ for (let num = 257; num < 261; ++num) { //257부터 261까지
         return answer;
     }
 array1.push(solution(num));
-console.log(array2)
+console.log(array2) // 배열값 하나씩 들어가는거 확인
 }
+
+console.log(array2) // 배열값 모두 들어간 것 
