@@ -11,8 +11,8 @@ let answer : number = 0;
 for ( let i = 1; i < 10001; i++ ) {
   array1.push(i);
 }
-
-while ( answer < 10003 ) { // 배열에 들어가는 answer값이 10000보다 작거나 같을때까지 반복
+// 배열에 들어가는 answer값이 10000보다 작거나 같을때까지 반복, 왜 10003까지 인지는 모르겠으나 셀프넘버 9999가 안보여서 임의로 정한 수
+while ( answer < 10003 ) {
   function d( n : number ) {
       let sum : number = 0;
       let originNum : number = n;
