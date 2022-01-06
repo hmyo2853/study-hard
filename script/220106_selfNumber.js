@@ -5,16 +5,17 @@ let array2 : Array<number> = [];
 let num : number = 1; //1부터 시작
 let answer : number = 0;
 
-while ( answer <= 100 ) { // 배열에 들어가는 answer값이 10000보다 작거나 같을때까지 반복
+while ( answer < 10003 ) { // 배열에 들어가는 answer값이 10000보다 작거나 같을때까지 반복
   function solution( num : number ) {
       let sum : number = 0;
       let originNum : number = num;
 
-      while( num > 0 ) { //256 25 2, 0에서 반복문 나감
-          sum += num % 10; //0 + 6 6 + 5 13 + 0 sum = 13
-          num = Math.floor(num / 10); // num = 25 2 0
-      }
-      answer = originNum + sum  //256 + 13 269
+      while( num > 0 ) {
+          sum += num % 10;
+          num = Math.floor(num / 10);
+      } //0에서 반복문 나감
+      console.log(originNum);
+      answer = originNum + sum;
       return answer;
   }
   array2.push(solution(num));
