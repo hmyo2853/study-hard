@@ -10,11 +10,11 @@ let array2 : Array<number> = [];
 let i : number = 1;
 let realNum : Array<number> = [];
 while(i < N + 1) { //i = 1~100
-  let splitNum: Array<string> = i.toString().split(''); //['1','2','3']
-  realNum = splitNum.map(Number); //[1,2,3]
-  // 해당 realNum이 등차수열이면 array2에 추가
-  if () {
-    
+  if ( /* 등차수열 조건 */ ) {
+    let splitNum: Array<string> = i.toString().split(''); //['1','2','3'] string Array
+    realNum = splitNum.map(Number); //[1,2,3] num Array
+    // 해당 한수를 array2에 추가
+    array2.push(i);
   }
   ++i;
   console.log(realNum);
