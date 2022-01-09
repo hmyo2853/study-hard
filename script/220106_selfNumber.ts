@@ -14,15 +14,15 @@ for ( let i = 1; i < 10001; i++ ) {
 // 배열에 들어가는 answer값이 10000보다 작거나 같을때까지 반복, 왜 10003까지 인지는 모르겠으나 셀프넘버 9999가 안보여서 임의로 정한 수
 while ( answer < 10003 ) {
   function d( n : number ) {
-      let sum : number = 0;
-      let originNum : number = n;
+    let sum : number = 0;
+    let originNum : number = n;
 
-      while( n > 0 ) {
-          sum += n % 10;
-          n = Math.floor(n / 10);
-      } //0에서 반복문 나감
-      answer = originNum + sum;
-      return answer;
+    while( n > 0 ) {
+      sum += n % 10;
+      n = Math.floor(n / 10);
+    } //0에서 반복문 나감
+    answer = originNum + sum;
+    return answer;
   }
   array2.push(d(n));
   array2.sort(function(a,b) { // 오름차순 2,4, ...
