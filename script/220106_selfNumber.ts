@@ -5,7 +5,6 @@
 let array1 : Array<number> = [];
 let array2 : Array<number> = [];
 let n : number = 1;
-let answer : number = 0;
 
 // array1을 만들어줌 1부터 2,3,4, ..., 10000
 for ( let i = 1; i < 10001; i++ ) {
@@ -21,7 +20,7 @@ while ( answer < 10003 ) {
       sum += n % 10;
       n = Math.floor(n / 10);
     } //0에서 반복문 나감
-    answer = originNum + sum;
+    let answer : number = originNum + sum;
     return answer;
   }
   array2.push(d(n));
