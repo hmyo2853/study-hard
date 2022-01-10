@@ -7,6 +7,12 @@ let array2 : Array<number> = [];
 let n : number = 1;
 let answer : number = 0;
 
+/*
+  function으로 묶어서 정리해 볼 것
+  answer를 while로 돌리지 않는 방법 사용
+  answer 변수 선언도 뺴지 말고 안으로 넣을 것
+*/
+
 // array1을 만들어줌 1부터 2,3,4, ..., 10000
 for ( let i = 1; i < 10001; i++ ) {
   array1.push(i);
