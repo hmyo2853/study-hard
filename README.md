@@ -23,5 +23,9 @@
 - 2022년 1월 3일 폴더 'algorithm' 파일 algorithm\220103_셀프넘버.md 생성
 - 2022년 1월 3일 파일 algorithm\220103_한수.md 생성
 - 2022년 1월 7일 파일 220101_셀프넘버.md 수정
+- 2022년 1월 8일 폴더 'script' 파일 script\220106_selfNumber.ts, script\220106_hanSu.ts 생성
+- 2022년 1월 9일 220106_selfNum.ts 220106_hanSu.ts 리뷰 및 파일 수정
+- 2022년 1월 10일 파일 algorithm\220110_다이얼.md 생성
+
 
 ---
