@@ -5,7 +5,8 @@
 */
 
 function dialTime() {
-  let dialStr: string = '';
+  const getInput: string = prompt();
+  console.log(getInput);
 }
 
 dialTime();
