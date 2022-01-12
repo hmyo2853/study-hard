@@ -6,17 +6,17 @@
   5. 반환되는 값을 모두 더해줌
 */
 
-const inputData = prompt('입력 값', '').toUpperCase();
+const inputData : string = prompt('입력 값', '').toUpperCase();
 //prompt로 받은 입력 값을 대문자로 변경한다 typeof = string   abcd => ABCD
 
 function splitFc(x : any) {
-  const splitArray = x.split('');
+  const splitArray : Array<string> = x.split('');
   //inputData를 쪼개서 배열로 만듦 ['A', 'B', 'C', 'D']
   return splitArray;
 }
 
 //해당 다이얼 값(알파벳)과 key(걸리는 시간)
-const dialArray = {
+const dialArray : object = {
   2 : 'ABC',
   3 : 'DEF',
   4 : 'GHI',
@@ -27,13 +27,11 @@ const dialArray = {
   9 : 'WXYZ'
 }
 
-const spentTime = Object.keys(dialArray); //keyArray string
-const dialTxt = Object.values(dialArray); //alphabetArray string
 
 //알파벳이 포함되어있는 object를 찾아서 key값을 number로 반환
 function getKey(y: any) {
-  let j = 0;
-  let outputTime = 0;
+  let j : number = 0;
+  let outputTime : number = 0;
   while (j < spentTime.length) {
     if(dialTxt[j].indexOf(y) !== -1) {
       //알파벳 배열 j인덱스 값에 해당 x의 값이 있다면 string의 j인덱스를 값 반환 (-1이 아남)
@@ -45,8 +43,9 @@ function getKey(y: any) {
   return outputTime;
 }
 
-//최종 걸리는 시간 구하기
-let answer = 0;
+const spentTime : Array<string> = Object.keys(dialArray); //keyArray string
+const dialTxt : Array<string> = Object.values(dialArray); //alphabetArray string
+let answer : number = 0;
 for(let i = 0; i < inputData.length; i++) {
   answer += getKey(splitFc(inputData)[i]);
   //inputData을 받아 쪼갠 배열의 i 인덱스로 구한 각 걸리는 시간을 다 더해줌
