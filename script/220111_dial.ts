@@ -51,4 +51,4 @@ for(let i = 0; i < inputData.length; i++) {
   //inputData을 받아 쪼갠 배열의 i 인덱스로 구한 각 걸리는 시간을 다 더해줌
 }
 
-console.log(answer);
+document.write(String(answer));
