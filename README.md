@@ -5,7 +5,7 @@
 #### 🖥️ Now studying
 
 - javascript
-- react
+- react js
 - typescript
 - JSX
 - vue(예정)
