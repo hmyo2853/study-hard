@@ -7,12 +7,16 @@
 */
 
 const croatia: Array<string> = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z='];
-const inputData: string = String(window.prompt('들어오는 알파벳', ''));
+let inputData: string = String(window.prompt('들어오는 알파벳', ''));
 
-document.write(inputData);
+console.log(inputData);
 
 for( let i = 0; i < croatia.length; i++ ) {
+  let result: string = '';
   if ( inputData.indexOf(croatia[i]) !== -1 ){ //만약 크로아티아 알파벳이 입력값에 들어있다면
-
+    result = inputData.replace(croatia[i], 'a');
+    inputData = result;
   }
+  inputData = result;
 }
+console.log(inputData);
