@@ -20,11 +20,14 @@ for i in range(0, len(lottos)):
   if lottos[i] in win_nums :
     check_num += 1
 
-
-#최고 순위와 최저 순위 배열로 넣기
 answer = []
+# 최고순위
 answer.append(7 - (zerocount + check_num))
-answer.append(6 - check_num)
+# 최저순위
+if check_num == 0:
+  answer.append(6)
+else:
+  answer.append(7 - check_num)
 
 print('=' * 10)
 
@@ -34,5 +37,5 @@ print(answer)
 
 
 print('0으로 바뀐 로또 갯수는 ' + str(zerocount) + '개')
-print('0을 제외하여 로또 숫자만 ' + str(check_num) + '개를 맞추면, 최저 순위' + str(6 - check_num))
 print('0으로 바뀐 로또 숫자 ' + str(zerocount) + '개와 로또 숫자 ' + str(check_num) + '개를 맞추면, 최고 순위' + str(7 - (zerocount + check_num)) + '등')
+print('0을 제외하여 로또 숫자만 ' + str(check_num) + '개를 맞추면, 최저 순위' + str(7 - check_num))
