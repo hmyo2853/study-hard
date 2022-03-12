@@ -1,4 +1,4 @@
-for test_case in range(2):
+for test_case in range(10):
   # 한번에 2줄을 10번씩 총 20줄을 가져온다
   leng = int(input())
   string = str(input())
