@@ -7,8 +7,7 @@
 - javascript
 - react js
 - typescript
-- JSX
 - python(진행중)
-- vue(예정)
+- JAVA(예정)
 - css
 - html
