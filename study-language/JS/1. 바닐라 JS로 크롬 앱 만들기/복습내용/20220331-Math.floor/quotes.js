@@ -69,3 +69,4 @@ const todayQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quoteSpan.innerHTML = todayQuote.quote; // object key가 "quote"인 요소 값 가져와서 첫번째 span에 출력
 authorSpan.innerHTML = todayQuote.author; // object key가 "author"인 요소 값 가져와서 두번째 span
+
