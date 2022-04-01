@@ -11,3 +11,6 @@
 2. localStorage를 이용하여 웹 브라우저에 key와 value를 저장하기
 3. 매번 갱신하여 현재 시간을 가져오는 clock, 1:1:1이 아닌 01:01:01로 출력해주는 padStart, 그리고 padEnd
 4. Math 매서드와 배열을 이용하여 랜덤으로 명언과 작가 출력하기
+
+## 2022.04.01
+1. JSON.stringify()로 모든 객체들을 string 자체로 변환
