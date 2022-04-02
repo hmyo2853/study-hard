@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css 연결-->
+    <link rel="stylesheet" href="css/style.css">
+    <title>20220330-preventDefault</title>
+</head>
+<body>
+    <!-- clock 위치 -->
+    <h2 id="clock">00:00:00</h2>
+    <!-- form 인 경우 submit이 동작하여 브라우저가 새로고침 된다.-->
+    <form id="inputAndButton" class="hidden">
+        <input value="" type="text" placeholder="여기에 이름을 입력하세요." />
+        <button>Enter</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <!-- todo -->
+    <form id="todo-form">
+        <input type="text" placeholder="Write a TO DO and Press Enter" />
+    </form>
+    <ul id="todo-list"></ul>
+    <!-- 명언-->
+    <div id="quote">
+        <span></span>
+        <span></span>
+    </div>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <!-- script 연결-->
+    <script type="text/javascript" src="js/greeting.js"></script>
+    <script type="text/javascript" src="js/clock.js"></script>
+    <script type="text/javascript" src="js/quotes.js"></script>
+    <script type="text/javascript" src="js/background.js"></script>
+    <script type="text/javascript" src="js/todo.js"></script>
+    <script type="text/javascript" src="js/weather.js"></script>
+</body>
+</html>
