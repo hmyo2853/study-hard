@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko" style="height:100%; overflow:hidden;">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GLEE'S MOMENTUM</title>
+  <link rel="stylesheet" type="text/css" href="src/style.css">
+</head>
+<body>
+  <h1 id="clock"></h1>
+  <form id="username">
+    <input type="text" placeholder="이름을 입력해주세요.">
+    <button>입력</button>
+  </form>
+  <div id="helloBox" class="hidden">
+    <h2 id="hello"></h2>
+  </div>
+  <div id="weather">
+    <span></span>
+    <span></span>
+  </div>
+  <h2 id="today">------ 오늘의 할 일은? ------</h2>
+  <form id="todoForm">
+    <input type="text" placeholder="Enter">
+  </form>
+  <ul id="todoList"></ul>
+  <!-- script-->
+  <script src="src/clock.js"></script>
+  <script src="src/name.js"></script>
+  <script src="src/background.js"></script>
+  <script src="src/weather.js"></script>
+  <script src="src/todo.js"></script>
+</body>
+</html>

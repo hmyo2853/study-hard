@@ -15,6 +15,7 @@ function addToDos() {
 // to do List 삭제하기
 function delTodo(click) {
     const parentLi = click.target.parentElement;
+    console.log(parentLi)
     parentLi.remove();
     // to do list는 클릭해서 누름 id가 아닌 다른 id들만 남겨진 array로 재생성
     todoList = todoList.filter(todo => todo.id !== parseInt(parentLi.id))
