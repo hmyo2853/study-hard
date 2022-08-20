@@ -6,14 +6,15 @@ check = [False, False, False] # 1 check
 i = 0
 
 def solution(array, check, i):
-  while False in check:
+  while i < len(check):
     arr = array[i]
     if check[i] == False:
       arr[i] = 1
       check[i] = True
-      print(arr, check, i)
+      check[i-1] = False
+      print(arr, check, i, check[i], check[i-1])
       solution(array, check, i+1)
-
+      
 solution(array, check, i)
 
 '''
