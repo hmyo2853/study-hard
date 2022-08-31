@@ -5,20 +5,12 @@ array에 들어있는 숫자 중 3개를 선택하는 경우의 수는 총 몇 �
 
 stack = []
 
-def solution(array, answer):
-    if len(stack) == 3:
-        answer += 1
-        print(stack, answer)
-    else:
-        for num in array:
-            if num not in stack:
-                stack.append(num)       # 먼저 넣는다.
-                answer = solution(array, answer)
-                stack.pop()             # 제거
+def solution(array):
+    array = array[1:]
+    print(array)
+    return
     
-    return answer
-    
-print(solution([1, 2, 3, 4], answer=0))
+print(solution([1, 2, 3, 4]))
 
 '''
 재귀 탈출 조건 3개 뽑으면 리턴
