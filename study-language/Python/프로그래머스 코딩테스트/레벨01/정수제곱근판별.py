@@ -8,3 +8,14 @@ def solution(n):
             return -1
     answer = (x+1)*(x+1)
     return answer
+
+
+# 코드 리뷰 후 수정본
+
+import math
+
+def solution(n):
+    x = math.sqrt(n)
+    if (x - int(x)) != 0:
+        return -1
+    return (x+1)**2
