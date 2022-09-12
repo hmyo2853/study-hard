@@ -1,0 +1,31 @@
+<!-- html이 아닌 리액트JS로 h3, button 만들기 -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script crossorigin src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <script>
+    const root = document.getElementById("root"); // cotainer를 넣을 엘리먼트 찾기
+    const h3 = React.createElement("h3", {
+      id : "create_h3",
+      style : {
+        color: "Red",
+        backgroundColor: "lime",
+        fontSize: "32px"
+      },
+      onMouseLeave: () => console.log("leave")
+    }, "Im H3, booya!"); // cotainer 안의 요소1
+    const btn = React.createElement("button", {
+      class : "create_btn",
+      style : {
+        padding: "10px 16px",
+        fontSize: "18px"
+      },
+      onClick: () => alert("Button Click!")
+    }, "Click me!"); // cotainer 안의 요소2
+    const container = React.createElement("div", null, [h3, btn]); // cotainer를 구성
+    ReactDOM.render(container, root); // cotainer를 root안에 render
+  </script>
+</html>
