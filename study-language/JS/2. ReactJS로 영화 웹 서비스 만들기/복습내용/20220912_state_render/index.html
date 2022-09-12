@@ -1,0 +1,28 @@
+<!-- root안에 text count하여 state 업데이트하는 button 만들기-->
+<!DOCTYPE html>
+<html>
+  <body>
+    <div id="root"></div>
+  </body>
+  <script src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script type="text/babel">
+    const root = document.getElementById("root");
+    function App() {
+      let [counter, setCountUp] = React.useState(0);
+      // 내부에서 counter와 setCountUp을 선언해주었으므로 내부에서 onClick 함수 사용
+      const onClick = () => {
+        setCountUp(counter + 1);
+      }
+      return (
+        <div>
+          <h3>Total clicks: {counter}</h3>
+          <button onClick={onClick}>Click me!</button>
+        </div>
+      );
+      //컴포넌트는 무조건 {onClick} 중괄호로 열고닫기
+    }
+    ReactDOM.render(<App />, root);
+  </script>
+</html>
