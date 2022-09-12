@@ -6,3 +6,13 @@ def solution(s):
         slist.append(int(i))
     slist.sort()
     return str(slist[0]) +' '+ str(slist[-1])
+
+
+
+# 코드 리뷰 후 수정본
+
+def solution(s):
+    slist = list(map(int, s.split()))
+    slist.sort()
+    return str(slist[0]) +' '+ str(slist[-1])
+

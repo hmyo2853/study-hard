@@ -17,3 +17,18 @@ def solution(n):
 
 
 
+# 코드 리뷰 후 수정본
+
+def solution(n):
+    answer = 0
+    for i in range(1, n+1):
+        plus = 0
+        for j in range(i, n+1):
+            plus += j
+            if plus > n:
+                break
+            if plus == n:
+                answer += 1
+                break
+    return answer
+
