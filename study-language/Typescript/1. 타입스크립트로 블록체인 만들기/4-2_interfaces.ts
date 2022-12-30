@@ -8,7 +8,7 @@ const player1: Player = {
   name: "player1",
 };
 
-//////
+////// type과 interface, interface는 자바스크립트로
 
 type PlayerA = {
   name: string;
@@ -41,7 +41,7 @@ const Player3: PlayerCC = {
   age: 21,
 };
 
-///////
+/////// type과 interface는 implements로 상속 받아서 사용할 수 있다.
 
 type PlayerTypeA = {
   firstName: string;
